@@ -15,6 +15,7 @@ export async function POST(req){
         return new Response(JSON.stringify({ message: 'Subscribed' }), { status: 200 });
 
     } catch (error) {
+        console.log(error);
         return new Response(JSON.stringify({ message: 'Internal error' }), { status: 500 });
     }
 }

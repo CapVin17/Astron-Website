@@ -3,7 +3,7 @@ import Contact from "@/model/contactSchedule";
 
 export async function POST(req){
     await dbConnect();
-    const {name, email, reason, date} = req.json();
+    const {name, email, reason, date} = await req.json();
     try {
         const isRegistered = Contact.findOne({email});
         if(isRegistered){
@@ -15,6 +15,7 @@ export async function POST(req){
         return new Response(JSON.stringify({ message: 'Contact Saved' }), { status: 200 });
 
     } catch (error) {
+        console.log(error);
         return new Response(JSON.stringify({ message: 'Internal error' }), { status: 500 });
     }
 }

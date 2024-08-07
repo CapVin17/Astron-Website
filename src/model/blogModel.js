@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Admin from "./adminModel";
 
 const blogSchema= new mongoose.Schema({
     title:{
@@ -7,7 +6,7 @@ const blogSchema= new mongoose.Schema({
         require: true
     },
     
-    author:{
+    email:{
         type: String,
         require: true
     },
@@ -21,14 +20,10 @@ const blogSchema= new mongoose.Schema({
         type: String,
     },
 
-    user:{
-        type: Admin,
-        require: true
-    }
     
     
     
-},{timestamps})
+},{createdAt: timestamps})
 
 const Blog = mongoose.models.Blog || mongoose.model('Blog', blogSchema);
 

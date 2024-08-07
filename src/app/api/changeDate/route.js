@@ -1,6 +1,8 @@
 import dbConnect from "@/lib/dbConnect";
 import Contact from "@/model/contactSchedule";
 
+
+
 export async function POST(req){
     await dbConnect();
     const {email, name, date, reason} = await req.json();

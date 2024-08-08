@@ -19,6 +19,10 @@ const blogSchema= new mongoose.Schema({
     fileImg:{
         type: String,
     },
+    coverImg:{
+        type :String,
+        require: true
+    }
 
     
     

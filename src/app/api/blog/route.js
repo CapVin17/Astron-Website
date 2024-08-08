@@ -4,7 +4,7 @@ import Blog from "@/model/blogModel";
 
 export async function POST(req){
     await dbConnect();
-    const {email, description, title, fileImg, createdAt } = req.json();
+    const {email, description, title, fileImg, createdAt, coverImg } = req.json();
 
     try {
         const isAdmin = await Admin.findOne({email});
@@ -17,7 +17,7 @@ export async function POST(req){
             return new Response(JSON.stringify({ message: 'Already existing title' }), { status: 400 });
         }
 
-        const newBlog = new Blog({description, title, fileImg, createdAt, email})
+        const newBlog = new Blog({description, title, fileImg, createdAt, email, coverImg})
         await newBlog.save();
         return new Response(JSON.stringify({ message: 'Blog saved' }), { status: 200 });
     } catch (error) {

@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 
 export default function Founder() {
-    // Variants for sliding in the image and text titles
+
     const imageAndTitleVariants = {
         hidden: { x: "-100%", opacity: 0 },
         visible: {
@@ -14,7 +14,6 @@ export default function Founder() {
         },
     };
 
-    // Variants for the paragraph text and button
     const textVariants = {
         hidden: { x: "-100%", opacity: 0 },
         visible: (i) => ({
@@ -50,7 +49,7 @@ export default function Founder() {
                     variants={imageAndTitleVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }} // Animation starts when 50% of the component is in view
+                    viewport={{ once: false, amount: 0.5 }} 
                 >
                     <div className="h-60 w-60 rounded-2xl bg-black"></div>
                 </motion.div>
@@ -58,7 +57,7 @@ export default function Founder() {
                     className="flex flex-col items-start justify-center w-1/2"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }} // Animation starts when 50% of the component is in view
+                    viewport={{ once: false, amount: 0.5 }}
                 >
                     <motion.h4
                         className="text-[#38434d] text-2xl font-bold text-start"

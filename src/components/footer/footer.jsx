@@ -14,7 +14,7 @@ export default async function Footer() {
                         <h2 className="text-[#eeeeee] hover:text-[#7e7e7e] duration-300 text-sm font-normal">Privacy Policy</h2>
                         <h2 className="text-[#eeeeee] hover:text-[#7e7e7e] duration-300 text-sm font-normal">Terms of Service</h2>
                     </div>
-                    <div className="flex flex-col items-center justify-center gap-5">
+                    <div className="flex flex-col items-center justify-center gap-5 pt-5 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0">
                         <Social />
                         <EmailSnppet />
                     </div>

@@ -18,7 +18,7 @@ export default async function About() {
                     <p className="text-[#2f2e2e] text-base font-medium mb-5">Our team of dedicated <span className="font-bold">professionals</span> tackle each area of your company's financials, from implementing your first <span className="font-bold">accounting software</span>, to building a rockstar <span className="font-bold">financial model</span> that will woo investors.</p>
                     <p className="text-[#2f2e2e] text-base font-medium mb-5"><span className="font-bold">We love companies</span>, and we love numbers - I guess you can call it a match made in heaven.</p>
                     <div className="py-10 flex items-center justify-start w-full">
-                        <Button size="lg" className="text-white text-base">Book a free consultation</Button>
+                        <Button size="lg" className="text-white text-base active:scale-75 transform duration-400">Book a free consultation</Button>
                     </div>
                 </div>
             </div>

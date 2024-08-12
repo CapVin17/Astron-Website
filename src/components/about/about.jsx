@@ -63,7 +63,7 @@ export default function About() {
                     ABOUT US
                 </motion.h1>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-medium mb-5"
+                    className="text-[#2f2e2e] text-base font-normal mb-5"
                     custom={1}
                     variants={textVariants}
                 >
@@ -77,21 +77,21 @@ export default function About() {
                     We help companies understand the bigger picture of their company's financials, allowing them to effectively report to their board, and continue to raise capital.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-medium mb-5"
+                    className="text-[#2f2e2e] text-base font-normal mb-5"
                     custom={3}
                     variants={textVariants}
                 >
                     We help <span className="font-bold">businesses</span> cleanup their books, and implement <span className="font-bold">effective</span> and <span className="font-bold">scalable Accounting</span> & Finance solutions, so that the founders can do what they do best...run their company.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-medium mb-5"
+                    className="text-[#2f2e2e] text-base font-normal mb-5"
                     custom={4}
                     variants={textVariants}
                 >
                     Our team of dedicated <span className="font-bold">professionals</span> tackle each area of your company's financials, from implementing your first <span className="font-bold">accounting software</span>, to building a rockstar <span className="font-bold">financial model</span> that will woo investors.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-medium mb-5"
+                    className="text-[#2f2e2e] text-base font-normal mb-5"
                     custom={5}
                     variants={textVariants}
                 >

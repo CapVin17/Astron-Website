@@ -5,7 +5,7 @@ import Founder from "@/components/founder/founder";
 
 export default function Home() {
   return (
-    <div className="font-sans">
+    <div className="font-sans overflow-hidden">
       <Hero/>
       <About/>
       <Founder/>

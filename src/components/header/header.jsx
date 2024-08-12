@@ -7,7 +7,7 @@ import Navbar from "./subcomponents/navbar";
 export default function Header(){
     return(
         <>
-            <div className="w-full fixed z-50 flex items-center justify-between py-2 px-5 lg:px-20 backdrop-blur-2xl bg-black/70">
+            <div className="w-full fixed z-50 flex items-center justify-between py-2 px-5 lg:px-20 backdrop-blur-2xl">
                 <div className="flex gap-2">
                     <Image className="h-10 w-10" src={Logo}/>
                     <div className="flex flex-col items-center justify-center mt-1">

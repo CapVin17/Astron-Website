@@ -9,7 +9,7 @@ export default async function Hero(){
             <div className="fixed -z-50">
                 <Image className="h-screen w-screen" src={bg}/>
             </div>
-            <div className="h-full bg-black/70 pt-32 pl-20">
+            <div className="h-full bg-black/70 pt-32 pb-20 pl-20">
                 <h1 className="text-6xl font-bold text-white">SCALE WITH <span className="text-[#9ac34d]">FINANCE</span> & <span className="text-[#9ac34d]">ACCOUNTING</span></h1>
                 <h2 className="text-2xl leading-9 text-white font-normal w-2/3 pt-10">We help <span className="text-[#9ac34d]">businesses scale</span> by supporting your <span className="text-[#9ac34d]">Finance & Accounting</span> needs with <span className="text-[#9ac34d]">Tech & Expertise</span></h2>
                 <div className="py-10">

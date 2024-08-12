@@ -6,10 +6,10 @@ export default function Navbar() {
         <>
             <div className="hidden md:block lg:block ">
                 <div className="flex gap-10">
-                    <Link href="./" className="text-[#2b2b2b] text-sm font-medium uppercase">Home</Link>
-                    <Link href="./" className="text-[#2b2b2b] text-sm font-medium uppercase">About</Link>
-                    <Link href="./" className="text-[#2b2b2b] text-sm font-medium uppercase">Services</Link>
-                    <Link href="./" className="text-[#2b2b2b] text-sm font-medium uppercase">contact</Link>
+                    <Link href="./" className="text-[#9ac34d] text-sm font-medium uppercase">Home</Link>
+                    <Link href="./" className="text-[#9ac34d] text-sm font-medium uppercase">About</Link>
+                    <Link href="./" className="text-[#9ac34d] text-sm font-medium uppercase">Services</Link>
+                    <Link href="./" className="text-[#9ac34d] text-sm font-medium uppercase">contact</Link>
                 </div>
             </div>
         </>

@@ -13,9 +13,9 @@ export default function Social() {
     return (
         <div>
             <div className="flex gap-5">
-                <Link className="duration-500 backdrop-blur-sm bg-blue-800 md:bg-[#67ac4d]/30 lg:bg-[#67ac4d]/30 hover:bg-blue-800 rounded-full p-2 h-10 w-10" href="./https://www.linkedin.com/company/delhi-startup-village/?viewAsMember=true"><Image className="bg-transparent" src={li}/></Link>
-                <Link className="duration-500 backdrop-blur-sm bg-gray-800 md:bg-[#67ac4d]/30 lg:bg-[#67ac4d]/30 hover:bg-gray-800 rounded-full p-2 h-10 w-10" href="./"><Image className="bg-transparent" src={x}/></Link>
-                <Link className="duration-500 backdrop-blur-sm bg-gradient-to-bl from-blue-500 via-red-500 to-yellow-500 lg:from-[#67ac4d]/30 md:from-[#67ac4d]/30 lg:via-[#67ac4d]/30 md:via-[#67ac4d]/30 lg:to-[#67ac4d]/30 md:to-[#67ac4d]/30 hover:from-blue-500 hover:via-red-500 via-50% hover:to-yellow-500 rounded-full p-2 h-10 w-10" href="https://www.instagram.com/hotel_moksha?igsh=NnBxZnNiaDF4bzA="><Image className="bg-transparent" src={ig}/></Link>
+                <Link className="duration-500 backdrop-blur-sm bg-blue-800 md:bg-[#7e7e7e]/30 lg:bg-[#7e7e7e]/30 hover:bg-blue-800 rounded-full p-2 h-10 w-10" href="./https://www.linkedin.com/company/delhi-startup-village/?viewAsMember=true"><Image className="bg-transparent" src={li}/></Link>
+                <Link className="duration-500 backdrop-blur-sm bg-gray-800 md:bg-[#7e7e7e]/30 lg:bg-[#7e7e7e]/30 hover:bg-gray-800 rounded-full p-2 h-10 w-10" href="./"><Image className="bg-transparent" src={x}/></Link>
+                <Link className="duration-500 backdrop-blur-sm bg-gradient-to-bl from-blue-500 via-red-500 to-yellow-500 lg:from-[#7e7e7e]/30 md:from-[#7e7e7e]/30 lg:via-[#7e7e7e]/30 md:via-[#7e7e7e]/30 lg:to-[#7e7e7e]/30 md:to-[#7e7e7e]/30 hover:from-blue-500 hover:via-red-500 via-50% hover:to-yellow-500 rounded-full p-2 h-10 w-10" href="https://www.instagram.com/hotel_moksha?igsh=NnBxZnNiaDF4bzA="><Image className="bg-transparent" src={ig}/></Link>
             </div>
         </div>
     )

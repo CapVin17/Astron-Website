@@ -43,7 +43,7 @@ export default function About() {
 
     return (
         <motion.div
-            className="bg-white flex items-center justify-center gap-16 py-10 px-40"
+            className="bg-white flex items-center justify-center gap-16 py-10 px-40 rounded-t-3xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }} 

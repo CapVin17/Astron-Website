@@ -78,7 +78,7 @@ export default function Founder() {
                         Founder & CEO
                     </motion.h6>
                     <motion.p
-                        className="text-base font-medium mb-5"
+                        className="text-base text-[#9aa9b5] font-medium mb-5"
                         variants={textVariants}
                         initial="hidden"
                         whileInView="visible"

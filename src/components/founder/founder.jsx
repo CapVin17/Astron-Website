@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Founder() {
 
     const imageAndTitleVariants = {
-        hidden: { x: "-100%", opacity: 0 },
+        hidden: { x: -100, opacity: 0 },
         visible: {
             x: 0,
             opacity: 1,
@@ -15,7 +15,7 @@ export default function Founder() {
     };
 
     const textVariants = {
-        hidden: { x: "-100%", opacity: 0 },
+        hidden: { x: -100, opacity: 0 },
         visible: (i) => ({
             x: 0,
             opacity: 1,
@@ -28,7 +28,7 @@ export default function Founder() {
     };
 
     const buttonVariants = {
-        hidden: { x: "100%", opacity: 0 },
+        hidden: { x: 100, opacity: 0 },
         visible: {
             x: 0,
             opacity: 1,
@@ -43,9 +43,9 @@ export default function Founder() {
     return (
         <>
             <h1 className="text-[#38434d] text-4xl font-bold pb-5 text-center bg-white">Meet our Founder</h1>
-            <div className="bg-white flex items-start justify-center gap-10 py-10 px-80">
+            <div className="bg-white flex flex-wrap items-start justify-center gap-10 py-10 px-10 lg:px-80">
                 <motion.div
-                    className="flex items-start justify-end"
+                    className="flex items-start lg:justify-end"
                     variants={imageAndTitleVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -54,13 +54,13 @@ export default function Founder() {
                     <div className="h-60 w-60 rounded-2xl bg-black"></div>
                 </motion.div>
                 <motion.div
-                    className="flex flex-col items-start justify-center w-1/2"
+                    className="flex flex-col items-start justify-center lg:w-1/2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
                 >
                     <motion.h4
-                        className="text-[#38434d] text-2xl font-bold text-start"
+                        className="text-[#38434d] text-2xl font-bold text-start w-full"
                         variants={imageAndTitleVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -69,7 +69,7 @@ export default function Founder() {
                         Anurag
                     </motion.h4>
                     <motion.h6
-                        className="text-[#67ac4d] text-lg font-bold mb-2 text-start"
+                        className="text-[#67ac4d] text-lg font-bold mb-2 text-start w-full"
                         variants={imageAndTitleVariants}
                         initial="hidden"
                         whileInView="visible"

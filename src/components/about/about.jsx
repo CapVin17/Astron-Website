@@ -8,11 +8,18 @@ import { motion } from "framer-motion";
 export default function About() {
     
     const imageVariants = {
-        hidden: { scale: 0, originX: 0, originY: 0 },
-        visible: {
-            scale: 1,
-            transition: { duration: 0.5, ease: "easeInOut" },
-        },
+        hidden: { scale: 0, x: -100, y: -100,opacity:0 },
+        visible: (i) => ({
+                scale: 1,
+                opacity:1,
+                x:0,
+                y:0,
+                transition: { 
+                    delay:0.2, 
+                    duration: 0.5, 
+                    ease: "easeInOut",
+                },
+        }),
     };
 
     const textVariants = {

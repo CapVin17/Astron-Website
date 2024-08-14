@@ -43,7 +43,7 @@ export default function About() {
 
     return (
         <motion.div
-            className="bg-white flex items-center justify-center gap-16 py-10 px-40 rounded-t-3xl"
+            className="bg-white flex flex-wrap items-center justify-center gap-16 py-10 px-10 lg:px-40 rounded-t-3xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }} 
@@ -54,7 +54,7 @@ export default function About() {
             >
                 <Image className="h-96 w-96" src={about} alt="About Us" />
             </motion.div>
-            <div className="flex flex-col items-center justify-start w-[40%]">
+            <div className="flex flex-col items-center justify-start lg:w-[40%]">
                 <motion.h1
                     className="text-[#38434d] text-4xl font-bold mb-5"
                     custom={0}
@@ -98,7 +98,7 @@ export default function About() {
                     <span className="font-bold">We love companies</span>, and we love numbers - I guess you can call it a match made in heaven.
                 </motion.p>
                 <motion.div
-                    className="py-10 flex items-center justify-start w-full"
+                    className="py-10 md:w-full lg:w-full xl:w-full 2xl:w-full"
                     variants={buttonVariants}
                     initial="hidden"
                     whileInView="visible"

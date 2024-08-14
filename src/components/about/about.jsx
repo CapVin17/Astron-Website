@@ -16,7 +16,7 @@ export default function About() {
     };
 
     const textVariants = {
-        hidden: { x: "100%", opacity: 0 },
+        hidden: { x: 100, opacity: 0 },
         visible: (i) => ({
             x: 0,
             opacity: 1,
@@ -29,7 +29,7 @@ export default function About() {
     };
 
     const buttonVariants = {
-        hidden: { x: "100%", opacity: 0 },
+        hidden: { x: 100, opacity: 0 },
         visible: {
             x: 0,
             opacity: 1,
@@ -98,7 +98,7 @@ export default function About() {
                     <span className="font-bold">We love companies</span>, and we love numbers - I guess you can call it a match made in heaven.
                 </motion.p>
                 <motion.div
-                    className="py-10 md:w-full lg:w-full xl:w-full 2xl:w-full"
+                    className="py-10 w-full"
                     variants={buttonVariants}
                     initial="hidden"
                     whileInView="visible"

@@ -12,10 +12,10 @@ export default function Navbar() {
         <>
             <div className="hidden md:block lg:block ">
                 <div className="flex gap-10">
-                    <Link href="/" className={`text-[#9ac34d] text-sm font-medium uppercase ${isActive("/")?"border-b border-[#9ac34d] scale-125":"border-b-0 scale-100"} p-1`}>Home</Link>
-                    <Link href="/about" className={`text-[#9ac34d] text-sm font-medium uppercase ${isActive("/about")?"border-b border-[#9ac34d] scale-125":"border-b-0 scale-100"} p-1`}>About</Link>
-                    <Link href="/" className={`text-[#9ac34d] text-sm font-medium uppercase ${isActive("/")?"border-b border-[#9ac34d] scale-125":"border-b-0 scale-100"} p-1`}>Services</Link>
-                    <Link href="/" className={`text-[#9ac34d] text-sm font-medium uppercase ${isActive("/")?"border-b border-[#9ac34d] scale-125":"border-b-0 scale-100"} p-1`}>contact</Link>
+                    <Link href="/" className={`text-sm uppercase ${isActive("/")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>Home</Link>
+                    <Link href="/about" className={`text-sm uppercase ${isActive("/about")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>About</Link>
+                    <Link href="/service" className={`text-sm uppercase ${isActive("/service")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>Services</Link>
+                    <Link href="/contact" className={`text-sm uppercase ${isActive("/contact")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>contact</Link>
                 </div>
             </div>
         </>

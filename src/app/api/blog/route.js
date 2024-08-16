@@ -4,7 +4,7 @@ import Blog from "@/model/blogModel";
 
 export async function POST(req){
     await dbConnect();
-    const {email, description, title, fileImg, createdAt, coverImg } = req.json();
+    const {email, description, title, fileImg, createdAt, coverImg } = await req.json();
 
     try {
         const isAdmin = await Admin.findOne({email});

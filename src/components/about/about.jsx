@@ -74,14 +74,14 @@ export default function About() {
                     custom={1}
                     variants={textVariants}
                 >
-                    You've got the killer idea...the best team...and the right execution strategy. You are just missing one thing - clean books. That's where we come in.
+                    You&apos;ve got the killer idea...the best team...and the right execution strategy. You are just missing one thing - clean books. That&apos;s where we come in.
                 </motion.p>
                 <motion.p
                     className="text-[#2f2e2e] text-base font-bold mb-5"
                     custom={2}
                     variants={textVariants}
                 >
-                    We help companies understand the bigger picture of their company's financials, allowing them to effectively report to their board, and continue to raise capital.
+                    We help companies understand the bigger picture of their company&apos;s financials, allowing them to effectively report to their board, and continue to raise capital.
                 </motion.p>
                 <motion.p
                     className="text-[#2f2e2e] text-base font-normal mb-5"
@@ -95,7 +95,7 @@ export default function About() {
                     custom={4}
                     variants={textVariants}
                 >
-                    Our team of dedicated <span className="font-bold">professionals</span> tackle each area of your company's financials, from implementing your first <span className="font-bold">accounting software</span>, to building a rockstar <span className="font-bold">financial model</span> that will woo investors.
+                    Our team of dedicated <span className="font-bold">professionals</span> tackle each area of your company&apos;s financials, from implementing your first <span className="font-bold">accounting software</span>, to building a rockstar <span className="font-bold">financial model</span> that will woo investors.
                 </motion.p>
                 <motion.p
                     className="text-[#2f2e2e] text-base font-normal mb-5"

@@ -14,8 +14,20 @@ export async function POST(req){
             return new Response(JSON.stringify({ message: 'Content cannot be empty' }), { status: 400 });
         }
 
-        const newBlog = new Blog({title, description, coverImg, email});
-        await newBlog.save();
+        const uploadedImage = await cloudinary.uploader.upload(coverImg, {
+            folder: 'blogs',
+            resource_type: 'image',
+        });
+
+        
+        const newBlog = new Blog({
+            title,
+            email,
+            description,
+            coverImg: uploadedImage.secure_url 
+        });
+
+        await newBlog.save()
 
         return new Response(JSON.stringify({message:"Blog saved"}),{status:200})
     } catch (error) {

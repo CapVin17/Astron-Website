@@ -28,4 +28,7 @@ export async function PUT(req) {
         console.log(error);
         return new Response(JSON.stringify({ message: 'Internal error' }), { status: 500 });
     }
+
+    
 }
+

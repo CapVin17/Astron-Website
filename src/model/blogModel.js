@@ -15,10 +15,6 @@ const blogSchema= new mongoose.Schema({
         type: String,
         require: true
     },
-
-    fileImg:{
-        type: String,
-    },
     coverImg:{
         type :String,
         require: true
@@ -27,7 +23,7 @@ const blogSchema= new mongoose.Schema({
     
     
     
-},{createdAt: timestamps})
+},{timestamps: true})
 
 const Blog = mongoose.models.Blog || mongoose.model('Blog', blogSchema);
 

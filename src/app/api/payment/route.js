@@ -1,3 +1,4 @@
+/*
 import razorpayInstance from '@/lib/razorpay';
 
 export async function POST(req) {
@@ -19,4 +20,5 @@ export async function POST(req) {
         console.log(error);
         return new Response(JSON.stringify({ message: 'Internal error' }), { status: 500 });
     }
-}
+} 
+*/

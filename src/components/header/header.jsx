@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/components/header/assets/logo.png"
 import Navbar from "./subcomponents/navbar";
+import Hambar from "./subcomponents/hambar";
 
 export default function Header(){
     return(
@@ -16,6 +17,7 @@ export default function Header(){
                     </div>
                 </div>
                 <Navbar/>
+                <Hambar/>
             </div>
         </>
     )

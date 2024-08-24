@@ -59,7 +59,7 @@ export default function About() {
                 className="flex items-center justify-end"
                 variants={imageVariants}
             >
-                <Image className="h-96 w-96" src={about} alt="About Us" />
+                <Image className="h-72 w-72 lg:h-96 lg:w-96" src={about} alt="About Us" />
             </motion.div>
             <div className="flex flex-col items-center justify-start lg:w-[40%]">
                 <motion.h1
@@ -70,35 +70,35 @@ export default function About() {
                     ABOUT US
                 </motion.h1>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-normal mb-5"
+                    className="text-[#2f2e2e] text-xs lg:text-base font-normal mb-5"
                     custom={1}
                     variants={textVariants}
                 >
                     You&apos;ve got the killer idea...the best team...and the right execution strategy. You are just missing one thing - clean books. That&apos;s where we come in.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-bold mb-5"
+                    className="text-[#2f2e2e] text-xs lg:text-base font-bold mb-5"
                     custom={2}
                     variants={textVariants}
                 >
                     We help companies understand the bigger picture of their company&apos;s financials, allowing them to effectively report to their board, and continue to raise capital.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-normal mb-5"
+                    className="text-[#2f2e2e] text-xs lg:text-base font-normal mb-5"
                     custom={3}
                     variants={textVariants}
                 >
                     We help <span className="font-bold">businesses</span> cleanup their books, and implement <span className="font-bold">effective</span> and <span className="font-bold">scalable Accounting</span> & Finance solutions, so that the founders can do what they do best...run their company.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-normal mb-5"
+                    className="text-[#2f2e2e] text-xs lg:text-base font-normal mb-5"
                     custom={4}
                     variants={textVariants}
                 >
                     Our team of dedicated <span className="font-bold">professionals</span> tackle each area of your company&apos;s financials, from implementing your first <span className="font-bold">accounting software</span>, to building a rockstar <span className="font-bold">financial model</span> that will woo investors.
                 </motion.p>
                 <motion.p
-                    className="text-[#2f2e2e] text-base font-normal mb-5"
+                    className="text-[#2f2e2e] text-xs lg:text-base font-normal mb-5"
                     custom={5}
                     variants={textVariants}
                 >
@@ -111,7 +111,7 @@ export default function About() {
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }} 
                 >
-                    <Button size="lg" className="text-white text-base active:scale-75 transform duration-400">
+                    <Button size="lg" className="text-white text-xs lg:text-base active:scale-75 transform duration-400">
                         Book a free consultation
                     </Button>
                 </motion.div>

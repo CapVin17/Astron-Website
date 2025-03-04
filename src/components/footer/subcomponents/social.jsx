@@ -2,12 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import li from "@/components/footer/assets/linkedin.svg"
-import gh from "@/components/footer/assets/github.svg"
 import ig from "@/components/footer/assets/instagram.svg"
 import x from "@/components/footer/assets/x.svg"
-import gmail from "@/components/footer/assets/gmail.svg"
-import discord from "@/components/footer/assets/discord.svg"
-import telegram from "@/components/footer/assets/telegram.svg"
 
 export default function Social() {
     return (

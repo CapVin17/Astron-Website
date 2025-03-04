@@ -66,7 +66,7 @@ export default function Founder() {
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.5 }}
                     >
-                        Anurag
+                        CA Anurag Verma
                     </motion.h4>
                     <motion.h6
                         className="text-[#67ac4d] text-lg font-bold mb-2 text-start w-full"

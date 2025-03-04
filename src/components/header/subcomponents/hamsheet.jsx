@@ -33,11 +33,11 @@ export default function HamSheet() {
                             <Link onClick={handleLinkClick} href="/calculator"><Button className="w-full items-center justify-start text-lg flex backdrop-blur-lg bg-clip-padding backdrop-filter uppercase text-[#9ac34d]" variant="outline ">Calculator</Button></Link>
                             <Link onClick={handleLinkClick} href="/blog"><Button className=" w-full items-center justify-start text-lg flex backdrop-blur-lg bg-clip-padding backdrop-filter uppercase text-[#9ac34d]" variant="outline ">Blog</Button></Link>
                             <Link onClick={handleLinkClick} href="./contact"><Button className=" w-full items-center justify-start text-lg flex backdrop-blur-lg bg-clip-padding backdrop-filter uppercase text-[#9ac34d]" variant="outline ">Contact</Button></Link>
+                            <Link onClick={handleLinkClick} href="./careers"><Button className=" w-full items-center justify-start text-lg flex backdrop-blur-lg bg-clip-padding backdrop-filter uppercase text-[#9ac34d]" variant="outline ">Career</Button></Link>
                         </SheetDescription>
                     </SheetHeader>
                 </SheetContent>
             </Sheet>
-
         </div>
     );
 }

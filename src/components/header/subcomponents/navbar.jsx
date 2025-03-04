@@ -18,6 +18,7 @@ export default function Navbar() {
                     <Link href="/calculator" className={`text-sm uppercase ${isActive("/calculator")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>Calculator</Link>
                     <Link href="/blog" className={`text-sm uppercase ${isActive("/blog")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>Blog</Link>
                     <Link href="/contact" className={`text-sm uppercase ${isActive("/contact")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>contact</Link>
+                    <Link href="/careers" className={`text-sm uppercase ${isActive("/contact")?"text-[#67ac4d] font-bold scale-125":"text-[#9ac34d] font-medium scale-100"} p-1`}>career</Link>
                 </div>
             </div>
         </>

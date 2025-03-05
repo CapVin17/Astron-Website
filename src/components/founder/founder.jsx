@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Founder() {
 
@@ -51,7 +52,9 @@ export default function Founder() {
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }} 
                 >
-                    <div className="h-60 w-60 rounded-2xl bg-black"></div>
+                    <div className="h-60 w-85 rounded-2xl bg-black">
+                        <Image className="h-full w-full" src="/5.png" alt="founders image" height={1600} width={1600} />
+                    </div>
                 </motion.div>
                 <motion.div
                     className="flex flex-col items-start justify-center lg:w-1/2"

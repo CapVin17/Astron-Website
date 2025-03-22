@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 export default function Service() {
   const services = [
     {
@@ -35,7 +34,6 @@ export default function Service() {
         </motion.h1>
       </div>
 
-      {/* Service Content Section */}
       <div className="bg-[#9ac34d] py-16 px-10 lg:px-72 text-white">
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -49,7 +47,6 @@ export default function Service() {
         </motion.p>
       </div>
 
-      {/* Service Cards Section */}
       <div className="py-16 px-10 lg:px-72 grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service, index) => (
           <motion.div

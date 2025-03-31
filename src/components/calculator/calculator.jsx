@@ -8,8 +8,7 @@ export default function Tools() {
     {
       id: "resume-scanner",
       title: "Resume Scanner",
-      description:
-        "Our Resume Scanner analyzes your resumes and let you export an excel file which has all sorts of information like Name, Email, Phone-Number etc extracted out for your convinience. You can have all information from your resumes at just one click and use it in your way.",
+      description: "Our Resume Scanner analyzes your resumes and let you export an excel file which has all sorts of information like Name, Email, Phone-Number etc extracted out for your convinience. You can have all information from your resumes at just one click and use it in your way.",
       instructions: [
         "Upload your resume PDFs.",
         "You can add multiple resume's at once and can also delete resumes from the list.",
@@ -24,8 +23,7 @@ export default function Tools() {
     {
       id: "depreciation-calculator",
       title: "Depreciation Calculator",
-      description:
-        "Calculate depreciated value for any number of assets you have in your organization very easily. Just need to upload the data about your assets and as well add corresponding depreciation rates/values for those defined assets and you are just one click away to find the real cost of your current assets.",
+      description: "Calculate depreciated value for any number of assets you have in your organization very easily. Just need to upload the data about your assets and as well add corresponding depreciation rates/values for those defined assets and you are just one click away to find the real cost of your current assets.",
       instructions: [
         "You need to have two excel sheets one for Assets and one for Depreciation rates.",
         "Upload both of the sheets using the drag drop feature or navigate and select the files.",
@@ -39,8 +37,7 @@ export default function Tools() {
     {
       id: "qr-code-generator",
       title: "QR Code Generator",
-      description:
-        "You might be exhausted after visiting multiple sites to just get an simple QR code which can ease out your work. But some user interfaces can be hard to understand and some might be easy but would spoil your QR with their watermarks. But here you can generate simple QR codes in just one click with no watermarks or any sorts of complications.",
+      description: "You might be exhausted after visiting multiple sites to just get an simple QR code which can ease out your work. But some user interfaces can be hard to understand and some might be easy but would spoil your QR with their watermarks. But here you can generate simple QR codes in just one click with no watermarks or any sorts of complications.",
       instructions: [
         "Simply add a URL in the input box.",
         "Click on generate QR code.",
@@ -54,7 +51,6 @@ export default function Tools() {
     },
   ];
 
-  // Update active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100;
@@ -71,12 +67,11 @@ export default function Tools() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once on mount
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to section when nav item is clicked
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -110,7 +105,6 @@ export default function Tools() {
         </div>
       </div>
 
-      {/* Introduction */}
       <div className="pt-16 px-6 lg:px-72">
         <h2 className="text-[#38434d] text-5xl lg:text-6xl font-extrabold">
           Powerful Tools
@@ -124,7 +118,6 @@ export default function Tools() {
         </p>
       </div>
 
-      {/* Tool sections */}
       <div className="space-y-32 pb-32 px-6 lg:px-72">
         {tools.map((tool) => (
           <section key={tool.id} id={tool.id} className="scroll-mt-20">
@@ -150,7 +143,6 @@ export default function Tools() {
                     </a>
                   </div>
 
-                  {/* Description and Instructions */}
                   <div className="md:w-2/3">
                     <p className="text-xl text-gray-700 mb-8">
                       {tool.description}
